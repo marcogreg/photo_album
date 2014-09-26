@@ -1,0 +1,22 @@
+::-moz-selection { background:#d2ebfa; text-shadow: none; }
+::selection { background:#d2ebfa;  text-shadow: none; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+fieldset {border: 0; margin: 0; padding: 0;}
+textarea {resize: vertical;}
+
+body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, hr,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video, img, a { outline:0 !important; margin: 0; padding: 0;border: 0; font-size: 100%; font: inherit; vertical-align: baseline; position:relative; width:auto; height:auto; /*color:#333;*/ font-family: Arial; font-weight: 400;  }
+p, div, a, li , span, article, section, ul, img,
+.btn ,.btn:focus, .btn:focus,
+button, button:focus, button:active,
+select, .btn-group,
+.bootstrap-select .btn:focus { outline:0 !important;}
+img { display:inline-block;}
+input { webkit-appearance: none; -moz-appearance: none; appearance: none; border:0;  }

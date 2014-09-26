@@ -1,0 +1,28 @@
+<section id="sc-detail">
+	<div class="container">
+		<div class="col-xs-12 col-md-12 head">
+			<div class="clearfix" >
+				<a href="#/photos" class="btn btn-default btn-back">Back</a>
+				<a href="{{photo.link}}"><h1>{{photo.title}}</h1></a>
+	    </div>
+	    <div class="clearfix" >
+		    <a href="{{photo.linkAuthor}}">Photo author</a>
+		    <span class="sep">|</span>
+				Published: {{photo.publishedString}}
+			</div>
+		</div>
+
+		<div class="col-xs-12 col-md-3">
+			<img ng-src="{{ photo.media.m }}" alt="{{photo.title}}" class="img-responsive img-thumbnail" />
+		</div>
+		<div class="col-xs-12 col-md-9">	
+			<div ng-bind-html="photo.description" class="description"></div>
+			<div class="tags">
+				<b>Tags</b>: 
+				<ul >
+	      	<li ng-repeat="tag in photo.tags" ><a href="#">{{tag}}</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
