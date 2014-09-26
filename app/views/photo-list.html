@@ -1,6 +1,6 @@
 <section id="sc-list">
   <div class="action-bar clearfix">
-    <div class="input-group  col-xs-12 col-md-3">
+    <div class="input-group  col-xs-12 col-sm-3">
       <span class="input-group-addon">
         <span class="glyphicon glyphicon-search"></span>
       </span>
@@ -10,15 +10,15 @@
   <div class="container">   
     <ul class="results-list">
       <li ng-repeat="photo in photos | filter:query | orderBy:'published':true" class="clearfix">
-        <div class="col-xs-12 col-md-3">
+        <div class="col-xs-4 col-sm-3">
           <a href="#/photos/{{photo.url}}"  ng-show="photo.url" ><img ng-src="{{photo.media.m}}" alt="{{photo.title}}" class="img-responsive img-thumbnail" /></a>
           <a ng-hide="photo.url" ><img ng-src="{{photo.media.m}}" alt="{{photo.title}}" class="img-responsive img-thumbnail" /></a>
         </div>
-        <div class="col-xs-12 col-md-9">
+        <div class="col-xs-8 col-sm-9">
           <a href="#/photos/{{photo.url}}" class="title truncate" ng-show="photo.url"  >{{photo.title}}</a>        
           <span class="hidden-xs sp01">Published {{photo.publishedString}}</span>
           <a href="{{photo.linkAuthor}}">Photo author</a>
-          <span class="hidden-md hidden-lg">Published {{photo.publishedString}}</span>
+          <span class="hidden-sm hidden-md hidden-lg sp02">Published {{photo.publishedString}}</span>
           <a href="{{photo.link}}">View on Flickr</a>
           <div class="share">
             <a href="https://plus.google.com/share?url=localhost:9000/#/photos/{{photo.url}}" class="btn btn-default"><i class="fa fa-google-plus"></i></a>

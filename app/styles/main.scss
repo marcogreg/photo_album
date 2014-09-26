@@ -93,11 +93,15 @@ footer {
   & .share {  
     margin-top: 25px;
   }
+  & .sp02 {
+    margin: 0 10px 0 0; 
+  }
 }
 
 #sc-detail{
   padding: 25px 0;
   & h1 { float: left;}
+  & img { margin-bottom: 25px; }
   & .btn-back { float:right; margin-top:20px;}
   & .head { margin-bottom:25px;}
   & .sep { margin: 0 10px;}
