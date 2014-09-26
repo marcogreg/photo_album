@@ -1,5 +1,13 @@
-node_modules
-dist
 .tmp
 .sass-cache
-bower_components
+
+# compiled output
+/dist
+/tmp
+
+# dependencies
+/node_modules
+/bower_components
+
+# local dependencies
+!/bower_components/
